@@ -1,0 +1,2 @@
+# simplified-SCO
+Simplifying Shopping
