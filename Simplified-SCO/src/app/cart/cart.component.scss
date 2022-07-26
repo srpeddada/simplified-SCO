@@ -1,0 +1,108 @@
+/* item styling */
+.item {
+  padding-left: 2px;
+  padding-top: 2px;
+  display: flex;
+}
+
+.buttons {
+  position: relative;
+  margin-right: 0;
+}
+.delete {
+  margin-left: 10em;
+}
+.is-active {
+  animation-name: animate;
+  animation-duration: 0.8s;
+  animation-iteration-count: 1;
+  animation-timing-function: steps(28);
+  animation-fill-mode: forwards;
+}
+@keyframes animate {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: right;
+  }
+}
+
+.image {
+  margin-top: 20px;
+}
+.description {
+  padding-top: 10px;
+  width: 115px;
+}
+.description span {
+  display: block;
+  font-size: 1em;
+}
+header {
+  padding-bottom: 70px;
+}
+.quantity {
+  margin-top: 2em;
+}
+.quantity input {
+  -webkit-appearance: none;
+  border: none;
+  text-align: center;
+  width: 32px;
+  font-size: 1em;
+  color: #43484d;
+  font-weight: 300;
+}
+button[class*="btn"] {
+  width: 30px;
+  height: 30px;
+  background-color: #e1e8ee;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+.minus-btn img {
+  margin-bottom: 3px;
+}
+.plus-btn img {
+  margin-top: 2px;
+}
+
+button:focus,
+input:focus {
+  outline: 0;
+}
+
+.total-price {
+  margin-top: 10px;
+}
+
+/* media queries */
+@media (max-width: 700px) {
+  .shopping-cart {
+    width: 100%;
+    height: auto;
+  }
+  .item {
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .image img {
+    width: 80%;
+  }
+  .image,
+  .description {
+    width: 100%;
+  }
+  .buttons {
+    margin-right: 0px;
+  }
+  .total-price {
+    text-align: left !important;
+    margin-left: 5px;
+  }
+}

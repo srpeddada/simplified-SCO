@@ -1,0 +1,124 @@
+
+<div class="branchesLoading">
+    <h5 class="text-center words">
+        Search Results
+    </h5>
+    <div class="search">
+
+        <div class="bg-light rounded-pill shadow-sm mb-4 sqaure">
+            <form #form="ngForm" (ngSubmit)="SubmitSearch(form)">
+                <div class="input-group">
+                    <input type="search" name="search" #search="ngModel" [(ngModel)]="service.selectedLogin.search"
+                        placeholder="Type your serach here" aria-describedby="button-addon1"
+                        class="form-control border-0 bg-light" required>
+                    <div class="input-group-append">
+                        <button id="button-addon1" type="submit" [disabled]="!form.valid"
+                            class="btn btn-link text-primary"><img src="../../assets/img/search.png"
+                                style="width: 20px; margin-right: 10px; margin-top: 12px; outline-style: none;" /></button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="https://i5.walmartimages.com/asr/a26fc9b0-b68d-4374-a206-81e7bc18492a.ab93229f2d43a147161ed311bccb09e3.jpeg?odnHeight=2000&odnWidth=2000&odnBg=ffffff" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Tace Book</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                            content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Isle 8, rack 10</small></p>
+
+                        <button  routerLink="/cart" type="button" class="btn btn-secondary">Add to cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="https://www.dollarama.com/images/0500723_0_XL.jpg" class="card-img" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Book</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                        content. This content is a little bit longer.</p>
+                 <p class="card-text"><small class="text-muted">Isle 9, rack 10</small></p>
+                    <button   routerLink="/cart" type="button" class="btn btn-secondary">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="https://www.dollarama.com/images/0503174_0_L.jpg" class="card-img" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Book ruled</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                        content. This content is a little bit longer.</p>
+                     <p class="card-text"><small class="text-muted">Isle 11, rack 10</small></p>
+                      <button   routerLink="/cart" type="button" class="btn btn-secondary">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="https://www.dollarama.com/images/0502660_0_L.jpg" class="card-img" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Notepad</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                        content. This content is a little bit longer.</p>
+                     <p class="card-text"><small class="text-muted">Isle 21, rack 10</small></p>
+                      <button   routerLink="/cart" type="button" class="btn btn-secondary">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="https://www.dollarama.com/images/3008655_0_L.jpg" class="card-img" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Spiral Book</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                        content. This content is a little bit longer.</p>
+                     <p class="card-text"><small class="text-muted">Isle 15, rack 10</small></p>
+                      <button   routerLink="/cart" type="button" class="btn btn-secondary">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row no-gutters">
+            <div class="col-md-4">
+                <img src="https://www.dollarama.com/images/3040847_0_L.jpg" class="card-img" alt="...">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">White book</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                        content. This content is a little bit longer.</p>
+                     <p class="card-text"><small class="text-muted">Isle 20, rack 10</small></p>
+                      <button   routerLink="/cart" type="button" class="btn btn-secondary">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+</div>

@@ -1,0 +1,161 @@
+<div class="px-4 px-lg-0">
+    <div class="container py-5 text-center">
+        <h1 class="display-4" style="color: rgb(40, 40, 40);">
+            <strong>Cart &nbsp;</strong>
+            <img style="width: 40px;" src="../../assets/img/cart.png" />
+        </h1>
+        <p class="lead mb-0" style="color: rgb(40, 40, 40);">
+            Add items to the cart by scanning the barcode using your phone
+        </p>
+    </div>
+    <div class="pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 p-5 bg-white rounded shadow-sm mb-5">
+                    <!-- Shopping cart table -->
+                    <div class="table-responsive" *ngIf="large">
+                       
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="border-0 bg-light">
+                                        <div class="p-2 px-3 text-uppercase">Product</div>
+                                    </th>
+                                    <th scope="col" class="border-0 bg-light">
+                                        <div class="py-2 text-uppercase">Price</div>
+                                    </th>
+                                    <th scope="col" class="border-0 bg-light">
+                                        <div class="py-2 text-uppercase">Quantity</div>
+                                    </th>
+                                    <th scope="col" class="border-0 bg-light">
+                                        <div class="py-2 text-uppercase">Remove</div>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr >
+                                    <th scope="row" class="border-0">
+                                        <div class="p-2">
+                                            <img src="https://www.dollarama.com/images/0500723_0_XL.jpg" alt="" width="70"
+                                                class="img-fluid rounded shadow-sm" />
+                                            <div class="ml-3 d-inline-block align-middle">
+                                                <h5 class="mb-0">
+                                                    <a href="#" class="text-dark d-inline-block align-middle">Bullet Note Book</a>
+                                                </h5>
+                                                <span class="text-muted font-weight-normal font-italic d-block">0667888114726
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td class="border-0 align-middle">
+                                        <strong>$&nbsp;10</strong>
+                                    </td>
+                                    <td class="border-0 align-middle">
+                                        <strong style="margin-left: 30px;">1</strong>
+                                    </td>
+                                    <td class="border-0 align-middle">
+                                        <a type="button" name="button" (click)="openDialog()">
+                                            <img style="padding-left: 20px; width: 60px;"
+                                                src="../../assets/img/delete2.svg" />
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- <div class="shopping-cart" *ngIf="!large">
+                        <div *ngIf="!nolist">
+                            <div *ngFor="let item of allitems">
+                                <div class="row">
+                                    <div class="item">
+                                        <div class="image">
+                                            <img src="{{ item.photo }}" alt="" />
+                                        </div>
+
+                                        <div class="description">
+                                            <strong><span>{{ item.name }}</span></strong>
+                                        </div>
+
+                                        <p style="padding-top: 10px;">
+                                            <strong>Quantity:&nbsp;{{ item.count }}</strong>
+                                        </p>
+                                    </div>
+
+                                    <div class="total-price row">
+                                        <strong>
+                                            <p style="margin-top: 10px; color: rgb(22, 150, 60);">
+                                                Price:&nbsp;{{ item.price }}
+                                            </p>
+                                        </strong>
+                                        <a class="delete" type="button" name="button" (click)="openDialog()">
+                                            <img style="width: 40px;" src="assets\icons\delete2.svg" />
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <br />
+                                <hr class="hr-light my-2 wow fadeInDown" data-wow-delay="0.4s" style="
+                    width: 200px;
+                    margin-top: 0px;
+                    border-top: 1px solid rgb(109, 107, 107);
+                  " />
+                            </div>
+                        </div>
+                        <h4 class="text-center" style="color: rgb(177, 172, 172);" *ngIf="nolist">
+                            There is nothing in your cart...
+                        </h4>
+                    </div> -->
+                    <!-- End -->
+                    <!-- <button (click)="getlist()">click me</button> -->
+                </div>
+            </div>
+
+            <div class="row py-5 p-4 bg-white rounded shadow-sm">
+                <div class="col-lg-6">
+                    <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">
+                        Coupon code
+                    </div>
+                    <div class="p-4">
+                        <p class="font-italic mb-4">
+                            If you have a coupon code, please enter it in the box below
+                        </p>
+                        <div class="input-group mb-4 border rounded-pill p-2">
+                            <input type="text" placeholder="Apply coupon" aria-describedby="button-addon3"
+                                class="form-control border-0" />
+                            <div class="input-group-append border-0">
+                                <button id="button-addon3" type="button" class="btn btn-dark px-4 rounded-pill">
+                                    <i class="fa fa-gift mr-2"></i>Apply coupon
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="bg-light rounded-pill px-4 py-3 text-uppercase font-weight-bold">
+                        Order summary
+                    </div>
+                    <div class="p-4">
+                        <p class="font-italic mb-4">
+                            Shipping and additional costs are calculated based on values you
+                            have entered.
+                        </p>
+                        <ul class="list-unstyled mb-4">
+                            <li class="d-flex justify-content-between py-3 border-bottom">
+                                <strong class="text-muted">Order Subtotal </strong><strong>$10.00</strong>
+                            </li>
+        
+                            <li class="d-flex justify-content-between py-3 border-bottom">
+                                <strong class="text-muted">Tax</strong><strong>$1.00</strong>
+                            </li>
+                            <li class="d-flex justify-content-between py-3 border-bottom">
+                                <strong class="text-muted">Total</strong>
+                                <h5 class="font-weight-bold">$11.00</h5>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-dark rounded-pill py-2 btn-block">Procceed to checkout</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

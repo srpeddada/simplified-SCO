@@ -1,0 +1,203 @@
+
+
+<div class="page-wrapper" id="home">
+
+    <!-- <div class="nav-wrapper">
+        <nav class="navbar">
+            <a class="navbar-brand scroll" href="#top"><img src="../../assets/logo1.png"
+                    style="width: 150px; border-radius: 10px;" /></a>
+
+            <ul class="nav no-search">
+                <li class="nav-item">
+                    <a href="https://twitter.com/srpeddada" target="_blank"><img src="../../assets/twitter.png"
+                            style="width: 20px;" /></a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://www.facebook.com/srinusashu" target="_blank"><img src="../../assets/facebook.png"
+                            style="width: 20px;" /></a>
+                </li>
+                <li class="nav-item"><a href="https://www.linkedin.com/in/sri-peddada-25860b169/" target="_blank"> <img
+                            src="../../assets/linkedin.png" style="width: 20px;" /></a></li>
+            </ul>
+        </nav>
+    </div> -->
+
+    <div class="nav-wrapper">
+        <nav class="navbar">
+            <a class="navbar-brand " href="#top"><img src="../../assets/img/logo_black.png"
+                    style="width: 170px; border-radius: 10px;"/> </a>
+    
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav no-search">
+                <li class="nav-item">
+                    <a (click)="scrollToElement('home')">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a (click)="scrollToElement('about1')">Categories</a>
+                </li>
+                <li class="nav-item"><a routerLink="/mywork">Our Sale</a></li>
+               
+                <li class="nav-item"><a (click)="scrollToElement('contactme')">Contact Us</a></li>
+                <li class="nav-item"><a  (click)="rout()" >Add to Cart</a></li>
+                <li class="nav-item"><a (click)="rout2()"><img src="../../assets/img/cart.png" style="width: 25px;"/></a></li>
+            </ul>
+        </nav>
+    </div>
+    <header class="v-header container1">
+        <!-- <div class="fullscreen-video-wrap">
+      <video
+      onloadedmetadata="this.muted=true"
+      autoplay="true"
+      loop="true"
+      muted="true"
+      preload="auto"
+      playsinline="true"
+      disablePictureInPicture="true"
+      >
+        <source
+          src="https://assets.mixkit.co/videos/preview/mixkit-top-aerial-shot-of-seashore-with-rocks-1090-large.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div> -->
+        <div class="fullscreen-video-wrap">
+            <video onloadedmetadata="this.muted=true" autoplay="true" loop="true" muted="true" preload="auto"
+                playsinline="true" disablePictureInPicture="true">
+                <source
+                    src="https://assets.mixkit.co/videos/preview/mixkit-browsing-items-in-a-supermarket-25438-large.mp4"
+                    type="video/mp4" />
+            </video>
+        </div>
+
+        <div class="header-overlay">
+            <div class="header-content">
+                <h1>Shopping made simple</h1>
+                <br />
+               
+                <br />
+                <!-- <div id="container">
+          <button class="learn-more" style="margin-bottom: 10px;">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text" routerLink="/mywork">Portfolio</span>
+          </button>
+        </div> -->
+            </div>
+           
+
+        </div>
+    </header>
+</div>
+<section class="post d-flex justify-content-center">
+<h3 class="des">
+    <img src="../../assets/img/barcode.png">Scan, <img src="../../assets/img/hand.png">Pay & <img src="../../assets/img/checklist.png">Checkout
+</h3>
+
+    <div class="branchesLoading">
+        <h5 class="text-center words">
+            Search products by keyword
+        
+            <span class="txt-type"
+                data-words='["Tootpast", "Salt", "Rice", "Gadgets", "Fruits", "Sale", "Milk"]'>
+            </span>
+        </h5>
+        <div class="search">
+           
+            <div class="bg-light rounded-pill shadow-sm mb-4 sqaure">
+                <form #form="ngForm" (ngSubmit)="SubmitSearch(form)">
+                <div class="input-group">
+                    <input type="search" name="search"  #search="ngModel" [(ngModel)]="service.selectedLogin.search" placeholder="Type your serach here" aria-describedby="button-addon1"
+                        class="form-control border-0 bg-light" required>
+                    <div class="input-group-append">
+                        <button id="button-addon1" type="submit" [disabled]="!form.valid" class="btn btn-link text-primary"><img src="../../assets/img/search.png" style="width: 20px; margin-right: 10px; margin-top: 12px; outline-style: none;"/></button>
+                    </div>
+                </div>
+                </form>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="card m-3">
+                <div class="card-img " style="border-radius: 20px;">
+                   <img style="border-radius: 20px;"  class="shadow" src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/posters-in-cozy-apartment-interior-royalty-free-image-943910360-1534189931.jpg?resize=980:*"/>  
+                   <p style="font-size: 25px;"><strong>Furniture</strong></p>
+                </div>
+            </div>
+            <div class="card m-3">
+                <div class="card-img " style="">
+                <img
+                    style="border-radius: 20px;"  class="shadow" src="https://purewows3.imgix.net/images/articles/2021_04/Grocery_Store_Hacks-Prep_Produce.jpg?auto=format,compress&cs=strip" />
+                <p style="font-size: 25px;"><strong>Cut Fruits</strong></p>
+                </div>
+            </div>
+            <div class="card m-3">
+                <div class="card-img " style="">
+                <img
+                    style="border-radius: 20px;" class="shadow"  src="https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z3JvY2VyeXxlbnwwfHwwfHw%3D&w=1000&q=80" />
+                <p style="font-size: 25px;"><strong>Vegetables</strong></p>
+                </div>
+            </div>
+            <div class="card m-3">
+                <div class="card-img " style="">
+                <img
+                    style="border-radius: 20px;"  class="shadow" src="https://www.greenqueen.com.hk/wp-content/uploads/2021/07/Handful-of-Big-Food-Firms-Control-80-of-Your-Groceries-1.jpg" />
+                <p style="font-size: 25px;"><strong>Break Fast</strong></p>
+                </div>
+            </div>
+            <div class="card m-3">
+                <div class="card-img " style="">
+                <img
+                    style="border-radius: 20px;"  class="shadow" src="https://images.unsplash.com/photo-1614735241165-6756e1df61ab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGdyb2Nlcmllc3xlbnwwfHwwfHw%3D&w=1000&q=80" />
+                <p style="font-size: 25px;"><strong>Snaks</strong></p>
+                </div>
+            </div>
+            <div class="card m-3">
+                <div class="card-img " style="">
+                <img
+                    style="border-radius: 20px;"  class="shadow" src="https://media.istockphoto.com/vectors/kitchenware-set-kitchen-utensils-and-cutlery-vector-id1248802048" />
+                <p style="font-size: 25px;"><strong>Utensils</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="row" >
+
+        <div class="col-sm-6 col-md-4" *ngFor="let item of posts">
+
+            <div class="card border-white">
+
+                <img class="card-img-top" (click)="open(item)" src="{{item.photo}}" alt="Card image cap"
+                    style="margin-bottom: 10px; cursor: pointer;">
+                <h5 class="card-title" (click)="open(item)"
+                    style="margin-bottom: 10px; font-weight: 600; cursor: pointer;">{{item.head}}</h5>
+                <h6 class="card-subtitle mb-2 text-muted">3 min read</h6>
+                <div class="card-body" style="margin-bottom: 10px;">
+                    <p (click)="open(item)" class="card-text" style="cursor: pointer;">{{item.preview}}</p>
+                </div>
+                <div><img src="{{item.user_photo}}" style="width: 12%; border-radius: 50%;" /><span
+                        style="color: rgb(88, 90, 92); font-size: 14px; font-weight: 600;"> {{item.author}}</span></div>
+            </div>
+
+        </div>
+    </div> -->
+
+    <h2 class="about">About Simplified-SCO</h2>
+    <section class="intro row">
+   
+        <div class=" col-sm-6 image_row">
+            <img  class="intro_img" src="../../assets/img/5247.jpg">
+        </div>
+        <div class=" col-sm-6 intro_desc">
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempora minima iste architecto. Ipsum atque facere provident repudiandae adipisci quae cupiditate. Vero impedit fugit ad odio cupiditate aliquid ut culpa repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate vero quisquam rem autem sit facere, non quaerat quos voluptas unde consequuntur sed consequatur praesentium ipsum temporibus? Natus ipsam ea et!</p>
+        </div>
+  
+    </section>
+
+    
+</section>
+

@@ -1,0 +1,53 @@
+<main class="mt-5 pt-5" style="position: relative;">
+    <div class="container">
+        <!--Section: Post-->
+
+        <section class="mt-4">
+            <!--Grid row-->
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-md-12 mb-4">
+                    <div class="shadow p-0 mb-4 bg-white rounded" style="max-width: 1200px;">
+                        <div class="row">
+                            <div class="col-md-6" *ngIf="scan">
+                                <zxing-scanner (scanSuccess)="onCodeResult($event)" [formats] ="['EAN_13', 'CODE_128', 'DATA_MATRIX']"></zxing-scanner>
+                            </div>
+                            <div class="col-md-6" *ngIf="!scan">
+                                <div class="p-4">
+                                    <div class="p-4">
+                                        <button (click)="scanCode()" class="btn btn-squared-default btn-secondary p-5">
+                                            <img src="../../assets/img/barcode.png" class="card-img" alt="..." />
+                                            Scan Code
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body text-center">
+                            
+
+                                    <p class="h5 my-4" style="font-size: 25px;">
+                                        Scan the barcode on the item
+                                    </p>
+                                    <p style="font-size: 21px;">
+                                       Scan the given barcode on the item you desire to add into your cart.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--/.Card-->
+
+                    <!--Comments-->
+
+                    <!--Reply-->
+
+                    <!--/.Reply-->
+                </div>
+            </div>
+            <!--Grid row-->
+        </section>
+        <!--Section: Post-->
+    </div>
+</main>
